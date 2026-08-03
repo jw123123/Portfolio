@@ -527,7 +527,7 @@ button {
 .git{
   width: 20px;
   height: 20px;
-  background: url(image/github_orange.png) center center / cover no-repeat;
+  background: url(images/github_orange.png) center center / cover no-repeat;
 }
 .map::after{
   padding: 20px 0;
