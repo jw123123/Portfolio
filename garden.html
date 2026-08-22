@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성남시 식물원 리뉴얼 | Portfolio</title>
+  <meta name="description" content="성남시 식물원 웹사이트 리뉴얼 프로젝트 포트폴리오 - UI/UX Design">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+  <link rel="stylesheet" href="garden.css">
+  <script src="garden.js" defer></script>
+</head>
+
+<body>
+
+  <!-- 헤더 -->
+  <header id="hd">
+    <div class="hd-inner wrap">
+      <a href="#top" class="hd-logo"><img src="images/garden_pf/logo.png" alt="식물원 로고"><span class="blind">Seongnam Garden</span></a>
+      <nav class="hd-nav">
+        <a href="#overview">OVERVIEW</a>
+        <a href="#analysis">ANALYSIS</a>
+        <a href="#target">TARGET</a>
+        <a href="#concept">CONCEPT</a>
+        <a href="#strategy">STRATEGY</a>
+        <a href="#result">RESULT</a>
+        <a href="#tools">TOOLS</a>
+      </nav>
+      <a href="index.html" class="hd-back">← 메인으로</a>
+    </div>
+  </header>
+
+  <!-- 도트 페이지네이션 -->
+  <nav class="dot-nav" aria-label="섹션 바로가기">
+    <a href="#top" class="active"><span class="label">메인</span><span class="dot"></span></a>
+    <a href="#overview" data-dark><span class="label">개요</span><span class="dot"></span></a>
+    <a href="#analysis"><span class="label">사이트 분석</span><span class="dot"></span></a>
+    <a href="#target" data-dark><span class="label">타겟</span><span class="dot"></span></a>
+    <a href="#goal"><span class="label">목표</span><span class="dot"></span></a>
+    <a href="#concept" data-dark><span class="label">디자인 컨셉 & 시스템</span><span class="dot"></span></a>
+    <a href="#strategy"><span class="label">개선 전략</span><span class="dot"></span></a>
+    <a href="#result"><span class="label">최종 결과</span><span class="dot"></span></a>
+    <a href="#tools" data-dark><span class="label">활용 툴</span><span class="dot"></span></a>
+    <a href="#thanks"><span class="label">마무리</span><span class="dot"></span></a>
+  </nav>
+
+  <main id="top">
+
+    <!-- 히어로 -->
+    <section class="hero">
+      <h2 class="blind">메인영역</h2>
+      <div class="hero-inner wrap">
+        <div>
+          <h1 class="hero-title reveal d1">Portfolio</h1>
+          <p class="hero-sub reveal d2">성남시 식물원 웹사이트 리뉴얼 프로젝트</p>
+          <p class="hero-desc reveal d3">
+            도심 속에서 자연을 경험할 수 있는 특별한 공간의 디지털 여정을 재정의합니다.
+            사용자 중심의 직관적인 인터페이스와 자연 친화적인 디자인 시스템을 통해
+            방문객들에게 새로운 경험을 선사합니다.
+          </p>
+          <dl class="hero-meta reveal d4">
+            <div>
+              <dt>작업 기간</dt>
+              <dd>05.12 – 05.19</dd>
+            </div>
+            <div>
+              <dt>기여도</dt>
+              <dd>100%</dd>
+            </div>
+            <div>
+              <dt>최종 결과물</dt>
+              <dd><a href="https://jw123123.github.io/garden/" target="_blank">jw123123.github.io/garden</a></dd>
+            </div>
+            <div>
+              <dt>디자인 시안</dt>
+              <dd><a href="https://www.figma.com/design/C1DIAGhiFlwU9JjW1lpgnr/%EC%84%B1%EB%82%A8%EC%8B%9C%EC%8B%9D%EB%AC%BC%EC%9B%90?node-id=175-453&t=12jo0kyOabIKgmkk-1" target="_blank">피그마 URL</a></dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-line reveal"><img src="images/garden_pf/line.png" alt="라인"><span class="blind">라인</span></div>
+
+        <div class="collage reveal d2" aria-hidden="true">
+          <div class="col">
+            <img src="images/garden_pf/leaf1.webp" alt="나무이미지1" class="leaf1">
+            <img src="images/garden_pf/leaf2.webp" alt="나무이미지3" class="leaf2">
+          </div>
+          <div class="col">
+            <img src="images/garden_pf/leaf3.webp" alt="나무이미지5" class="leaf3">
+            <img src="images/garden_pf/leaf4.webp" alt="나무이미지6" class="leaf4">
+          </div>
+          <div class="col">
+            <img src="images/garden_pf/leaf5.webp" alt="나무이미지2" class="leaf5">
+            <img src="images/garden_pf/leaf6.webp" alt="나무이미지4" class="leaf6">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 오버뷰 -->
+    <section id="overview" class="overview on-dark">
+      <div class="wrap">
+        <span class="caption reveal">Overview</span>
+        <h2 class="overview-title reveal d1">정보를 넘어, 식물원의 경험으로</h2>
+        <p class="reveal d2">
+          성남시 식물원 홈페이지는 필요한 정보를 제공하고 있었지만
+          식물원이 가진 자연성과 공간의 분위기를 충분히 전달하지 못하고 있었습니다.
+          따라서 사용자가 계절의 변화를 직관적으로 경험하고 식물원의 브랜드 가치를
+          자연스럽게 느낄 수 있도록 리디자인을 진행했습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 기존 사이트 분석 -->
+    <section id="analysis">
+      <div class="wrap">
+        <span class="caption reveal">Site Analysis</span>
+        <h2 class="sec-title reveal d1">기존 사이트 분석</h2>
+
+        <div class="analysis-list">
+          <div class="analysis-row reveal">
+            <div class="analysis-problem">식물원의 자연 친화적 이미지 전달 부족</div>
+            <div class="analysis-arrow"><img src="images/garden_pf/arrow.png" alt="화살표"></div>
+            <div class="analysis-solution">
+              전반적인 컬러를 그린 계열로 통일하고 일부 포인트 컬러를 적용해
+              자연 친화적인 브랜드 이미지 강화
+            </div>
+          </div>
+          <div class="analysis-row reveal d1">
+            <div class="analysis-problem">정보 위주의 레이아웃으로 시각적 콘텐츠 몰입도 낮음</div>
+            <div class="analysis-arrow"><img src="images/garden_pf/arrow.png" alt="화살표"></div>
+            <div class="analysis-solution">
+              메인 영역 진입 시 대형 타이포그래피와 영상을 설계해 몰입도 강화
+            </div>
+          </div>
+          <div class="analysis-row reveal d2">
+            <div class="analysis-problem">계절성과 생태 경험을 보여주는 인터랙션 부재</div>
+            <div class="analysis-arrow"><img src="images/garden_pf/arrow.png" alt="화살표"></div>
+            <div class="analysis-solution">
+              계절별 이미지의 변화와 좋아하는 계절을 선택할 수 있는 인터랙션을 구현하여
+              사용자의 참여와 유대감을 강화
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 타겟 -->
+    <section id="target" class="target on-dark">
+      <div class="wrap">
+        <span class="caption reveal">Target Audience</span>
+        <p class="target-statement reveal d1">
+          자연·전시·문화 콘텐츠 소비 비중이 높은<br>
+          <strong>20 – 40대 사용자</strong>
+        </p>
+
+        <div class="target-cards">
+          <div class="target-card reveal">
+            <h3>특성</h3>
+            <ul>
+              <li>자연에 관심이 많음</li>
+              <li>빠른 정보 탐색을 선호</li>
+              <li>시각적 SNS 콘텐츠에 익숙</li>
+            </ul>
+          </div>
+          <div class="target-card reveal d1">
+            <h3>방문 목적</h3>
+            <ul>
+              <li>식물원 정보 확인</li>
+              <li>프로그램 참여</li>
+              <li>계절별 식물 탐색</li>
+            </ul>
+          </div>
+          <div class="target-card reveal d2">
+            <h3>NEEDS</h3>
+            <ul>
+              <li>방문 전 식물원의 비주얼을 확인</li>
+              <li>현재 어떤 식물을 볼 수 있는지 파악</li>
+              <li>프로그램 종류·일정·대상 연령을 비교 후 신청</li>
+              <li>실용적 방문 정보 탐색</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 프로젝트 골 -->
+    <section id="goal" class="goal">
+      <h2 class="blind">프로젝트 목표</h2>
+      <div class="wrap">
+        <span class="caption reveal">Project Goal</span>
+        <p class="goal-txt reveal d1">
+          <span class="bl">사용자 친화적</span>이고 <span class="yellow">직관적인 인터페이스</span>로
+          방문객의 접근성을 높이고,<br>
+          식물원의 아름다움을 효과적으로 전달하는
+          <span class="red">디지털 경험</span> 제공
+        </p>
+      </div>
+    </section>
+
+    <!-- 디자인 컨셉 -->
+    <section id="concept" class="concept on-dark">
+      <div class="wrap">
+        <span class="caption reveal">Design Concept & System</span>
+        <h2 class="sec-title reveal d1">디자인</h2>
+        <p class="concept-intro reveal d2">
+          자연의 편안함, 계절의 변화, 살아있는 경험을 중심으로 식물원이 가진 공간적<br> 
+          가치를 디지털 환경에서도 감각적으로 경험할 수 있도록 설계했습니다.
+        </p>
+
+        <div class="concept-circles">
+          <div class="circle reveal">
+            <h3>Nature</h3>
+            <span class="dash"></span>
+            <p>식물원의 <strong class="yellow">자연 친화적</strong>인<br>부분을 차용</p>
+          </div>
+          <div class="circle reveal d1">
+            <h3>Seasonality</h3>
+            <span class="dash"></span>
+            <p>다양한 식물들을 볼 수 있도록<br><strong class="bl">계절별</strong> 콘텐츠 추가</p>
+          </div>
+          <div class="circle reveal d2">
+            <h3>Vitality</h3>
+            <span class="dash"></span>
+            <p>영상과 인터랙션을 통해<br><strong class="red">생동감</strong> 있게 표현</p>
+          </div>
+        </div>
+        <div class="system-cards">
+          <!-- 컬러 -->
+          <div class="sys-card reveal">
+            <h3>Color Guide</h3>
+            <div class="swatches">
+              <div class="swatch">
+                <div class="chip chip-bg"></div>
+                <p>Background <span>#F7F5EF</span></p>
+              </div>
+              <div class="swatch">
+                <div class="chip chip-font"></div>
+                <p>Font <span>#2B2B2B</span></p>
+              </div>
+              <div class="swatch">
+                <div class="chip chip-main"></div>
+                <p>Main <span>#2F4F3E</span></p>
+              </div>
+              <div class="swatch">
+                <div class="chip chip-blue"></div>
+                <p>Blue point<span>#6E8FA3</span></p>
+              </div>
+              <div class="swatch">
+                <div class="chip chip-gold"></div>
+                <p>Yellow point<span>#C9A86A</span></p>
+              </div>
+              <div class="swatch">
+                <div class="chip chip-terra"></div>
+                <p>Red point<span>#B56A5D</span></p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- 타이포 -->
+          <div class="sys-card reveal d1">
+            <h3>Typography</h3>
+            <div class="typo-grid">
+              <div class="typo-item">
+                <p class="typo-label">영문 · AMIRI</p>
+                <p class="specimen">Botanical Garden</p>
+                <table>
+                  <tr><td>H1</td><td>64px</td></tr>
+                </table>
+              </div>
+              <div class="typo-item">
+                <p class="typo-label">국문 · NANUMSQUARE NEO</p>
+                <p class="specimen">성남시 식물원</p>
+                <table>
+                  <tr><td>H2</td><td>56px</td></tr>
+                </table>
+              </div>
+              <div class="typo-item">
+                <p class="typo-label">국문 · MARUBURI</p>
+                <p class="specimen">계절의 정원을 거닐다</p>
+                <table>
+                  <tr><td>H3</td><td>32px</td></tr>
+                  <tr><td>H4</td><td>24px</td></tr>
+                  <tr><td>Body</td><td>18px</td></tr>
+                  <tr><td>Caption</td><td>15px</td></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 개선 전략 -->
+    <section id="strategy">
+      <div class="wrap">
+        <span class="caption reveal">Goals &amp; Strategy</span>
+        <h2 class="sec-title reveal d1">개선 전략</h2>
+
+        <div class="strategy-grid">
+          <div class="strategy-card reveal">
+            <p class="num">01</p>
+            <h3>대형 타이포그래피 &amp; 영상</h3>
+            <p>메인 영역 진입 시 대형 타이포그래피와 영상을 설계해 몰입도를 강화했습니다.</p>
+          </div>
+          <div class="strategy-card reveal d1">
+            <p class="num">02</p>
+            <h3>그린 계열 컬러 통일</h3>
+            <p>전반적인 컬러를 그린 계열로 통일하여 자연 친화적인 브랜드 이미지를 강화했습니다.</p>
+          </div>
+          <div class="strategy-card reveal d2">
+            <p class="num">03</p>
+            <h3>포인트 컬러 리듬</h3>
+            <p>로고 컬러를 포인트로 활용하여 시각적 리듬을 형성했습니다.</p>
+          </div>
+          <div class="strategy-card reveal">
+            <p class="num">04</p>
+            <h3>브랜드 메시지 집중</h3>
+            <p>핵심 메시지 일부에 포인트 컬러를 적용해 브랜드 메시지 집중도를 향상시켰습니다.</p>
+          </div>
+          <div class="strategy-card reveal d1">
+            <p class="num">05</p>
+            <h3>계절 인터랙션</h3>
+            <p>계절별 이미지가 변하며 좋아하는 계절을 선택할 수 있는 인터랙션으로 사용자의 참여와 유대감을 높였습니다.</p>
+          </div>
+          <div class="strategy-card reveal d2">
+            <p class="num">06</p>
+            <h3>카드 레이아웃 &amp; 접근성</h3>
+            <p>카드 기반 레이아웃과 페이지 이동 없는 정보 구조로 콘텐츠 가독성과 접근성을 개선했습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 최종 결과 -->
+    <section id="result" class="result">
+      <div class="wrap">
+        <div class="result-head">
+          <div>
+            <span class="caption reveal">Final Result</span>
+            <h2 class="sec-title reveal d1">최종 결과물</h2>
+          </div>
+          <div class="result-links reveal d2">
+            <a href="https://jw123123.github.io/garden/" target="_blank" class="btn fill">최종 사이트 보기</a>
+            <a href="https://github.com/jw123123/garden" target="_blank" class="btn line">GitHub</a>
+          </div>
+        </div>
+
+        <a href="https://jw123123.github.io/garden/" target="_blank" class="browser reveal">
+          <div class="browser-bar">
+            <i></i><i></i><i></i>
+            <span>jw123123.github.io/garden</span>
+          </div>
+          <div class="screen">
+            <img src="images/garden_pf/site.webp" alt="성남시 식물원 리뉴얼 사이트 전체 페이지 스크린샷">
+          </div>
+        </a>
+        <p class="result-hint">화면에 마우스를 올리면 전체 페이지가 스크롤됩니다 · 클릭 시 실제 사이트로 이동</p>
+      </div>
+    </section>
+
+    <!-- 활용 툴 -->
+    <section id="tools" class="tools on-dark">
+      <div class="wrap">
+        <span class="caption reveal">Tools Used</span>
+        <h2 class="sec-title reveal d1">프로젝트 활용 툴</h2>
+
+        <div class="tools-grid">
+          <div class="tool-card reveal"><h3>HTML</h3><p><span>#시멘틱마크업</span><span>#웹접근성</span></p></div>
+          <div class="tool-card reveal"><h3>CSS</h3><p><span>#스타일링</span><span>#인터랙션구현</span></p></div>
+          <div class="tool-card reveal d1"><h3>JavaScript</h3><p><span>#이벤트처리</span><span>#동적UI</span></p></div>
+          <div class="tool-card reveal d1"><h3>React</h3><p><span>#컴포넌트개발</span><span>#상태관리</span></p></div>
+          <div class="tool-card reveal d2"><h3>Figma</h3><p><span>#UI디자인설계</span><span>#컴포넌트제작</span></p></div>
+          <div class="tool-card reveal"><h3>Git</h3><p><span>#버전관리</span><span>#형상관리</span></p></div>
+          <div class="tool-card reveal"><h3>Premiere Pro</h3><p><span>#영상편집</span><span>#히어로영상제작</span></p></div>
+          <div class="tool-card reveal d1"><h3>Photoshop</h3><p><span>#이미지편집</span><span>#이미지보정</span></p></div>
+          <div class="tool-card reveal d1"><h3>Chat GPT</h3><p><span>#AI협업</span><span>#이미지생성</span></p></div>
+          <div class="tool-card reveal d2"><h3>Claude</h3><p><span>#AI협업</span><span>#개발보조</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 마무리 -->
+    <section id="thanks" class="thanks">
+      <h2 class="blind">마무리</h2>
+      <div class="wrap">
+        <p class="thanks-title reveal">Thank You</p>
+        <p class="thanks-sub reveal d1">포트폴리오를 봐주셔서 감사합니다</p>
+        <a href="index.html" class="btn fill reveal d2">메인 포트폴리오로 돌아가기</a>
+        <p class="copyright">&copy; 2026. JIWON CHOI. ALL RIGHTS RESERVED.</p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>

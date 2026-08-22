@@ -3,7 +3,27 @@
 
 
 /* mo */
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+  .project-container {
+  flex-direction: column;
+  }
+  .col {
+    display: contents;
+  }
+    .col-right {
+    margin-top: 0;
+  }
+  .project-item:nth-of-type(1) { order: 1; } /* 케이카 */
+  .project-item:nth-of-type(2) { order: 2; } /* 성남시 */
+  .project-item:nth-of-type(3) { order: 3; } /* 포스코 */
+  .project-item:nth-of-type(4) { order: 4; } /* 캐논 */
+
+  .profile-photo {
+  max-width: 200px;
+  }
+
+  
+}
 
 
 /* tb~ */
@@ -13,10 +33,10 @@
 
   /* 히어로 */
   .hero-section {
-  min-height: 80vh;
+  min-height: 90vh;
 }
   .hero-section:before {
-    top: -300px; 
+    top: -400px; 
     left: -300px;
     width: 1000px; 
     height: 1000px;
@@ -28,19 +48,22 @@
 
   
   /* 프로젝트 */
-  /* .project-section { padding-bottom: 300px; } */
 
 .project-bg-title { font-size: 150px;}
 
   .project-container { 
-    grid-template-columns: 1fr 1fr;
-    column-gap: 60px; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px 40px;
   }
-.project-item { padding-bottom: 30px; }
-.project-item:nth-child(1) { margin-top: 60px; }
-.project-item:nth-child(2) { margin-top: 300px; }
-.project-item:nth-child(3) { margin-top: -150px; }
-.project-item:nth-child(4) { margin-top: 90px; }
+
+  .col {
+    gap: 130px; 
+  }
+
+.item-desc{
+display: block;
+}
+
 
   .item-title { font-size: 24px; }
 
@@ -136,17 +159,16 @@
   width: 30%;
 }
 .profile-heading {
-  font-size: 28px;
   margin-bottom: 1em;
+  font-size: 28px;
+  font-weight: 500;
 }
 
+.profile-desc {display: block;}
 .profile-desc p {
   font-size: 18px; 
 }
 
-.ft-sign {
-  left: 3%;
-}
 .info-wrap {
   flex-direction: row;
   flex-wrap: wrap;
@@ -200,36 +222,37 @@
   /* 히어로 */
   .hero-section { min-height: 120vh; }
   .hero-section:before {
-    top: -800px; 
-    left: -500px;
-    width: 1800px; 
-    height: 1800px;
+    top: -700px; 
+    left: -400px;
+    width: 1500px; 
+    height: 1500px;
   }
 
-  .hero-txt {font-size: 150px;}
+  .hero-txt {font-size: 140px;}
 
   /* 프로젝트 */
   .project-section {padding-bottom: 200px;}
-.project-bg-title {
-
-  font-size: 15em;
-
-}
-
-  .project-container {  
-    grid-template-columns: 1fr 1fr;  
-    column-gap: 300px;
+  .project-container {
+    gap: 80px;
   }
 
-  .project-item { padding-bottom: 30px; }
-  .project-item:nth-child(1) { margin-top: 60px; }
-  .project-item:nth-child(2) { margin-top: 500px; }
-  .project-item:nth-child(3) { margin-top: -100px; }
-  .project-item:nth-child(4) { margin-top: 350px; }
+  .col {
+    gap: 400px; 
+  }
+
+  .project-bg-title {
+    font-size: 15em;
+  }
 
   .item-title {
     font-size: 32px; 
   }
+
+  .item-desc{
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+
 
   /* 포트폴리오 */
     .portfolio-wrap {

@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>케이카 회사소개 리뉴얼 | Portfolio</title>
+  <meta name="description" content="케이카 회사소개 웹사이트 리뉴얼 프로젝트 포트폴리오 - UI/UX Design">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="kcar.css">
+  <script src="kcar.js" defer></script>
+</head>
+
+<body>
+
+  <!-- 헤더 -->
+  <header id="hd">
+    <div class="hd-inner wrap">
+      <a href="#top" class="hd-logo">K Car</a>
+      <nav class="hd-nav">
+        <a href="#overview">OVERVIEW</a>
+        <a href="#analysis">ANALYSIS</a>
+        <a href="#target">TARGET</a>
+        <a href="#wireframe">WIREFRAME</a>
+        <a href="#system">SYSTEM</a>
+        <a href="#result">RESULT</a>
+        <a href="#team">TEAM</a>
+      </nav>
+      <a href="index.html" class="hd-back">← 메인으로</a>
+    </div>
+  </header>
+
+  <!-- 도트 페이지네이션 -->
+  <nav class="dot-nav" aria-label="섹션 바로가기">
+    <a href="#top" class="active"><span class="label">메인</span><span class="dot"></span></a>
+    <a href="#overview"><span class="label">개요</span><span class="dot"></span></a>
+    <a href="#analysis"><span class="label">사이트 분석</span><span class="dot"></span></a>
+    <a href="#target"><span class="label">타겟</span><span class="dot"></span></a>
+    <a href="#goal"><span class="label">프로젝트 목표</span><span class="dot"></span></a>
+    <a href="#wireframe"><span class="label">와이어프레임</span><span class="dot"></span></a>
+    <a href="#system"><span class="label">디자인 시스템</span><span class="dot"></span></a>
+    <a href="#result"><span class="label">최종 결과물</span><span class="dot"></span></a>
+    <a href="#tools"><span class="label">활용 툴</span><span class="dot"></span></a>
+    <a href="#team"><span class="label">팀 구성</span><span class="dot"></span></a>
+    <a href="#thanks" data-dark><span class="label">마무리</span><span class="dot"></span></a>
+  </nav>
+
+  <main id="top">
+
+    <!-- 히어로 -->
+    <section class="hero">
+      <h2 class="blind">메인영역</h2>
+      <div class="wrap">
+        <div class="hero-top reveal">
+          <span>PORTFOLIO · 2026</span>
+        </div>
+        <h1 class="hero-title reveal d1"><em>K Car</em> Portfolio</h1>
+        <p class="hero-desc reveal d2">
+          직영 인증 시스템 기반의 중고차 플랫폼 케이카의 회사 소개 사이트를<br>
+          브랜드 경험 중심으로 재설계한 3인 팀 프로젝트입니다.
+        </p>
+
+        <div class="hero-meta reveal d3">
+          <div class="meta-card">
+            <span>프로젝트 기간</span>
+            <p>2026.03.10 ~ 04.16</p>
+          </div>
+          <div class="meta-card">
+            <span>기여도</span>
+            <p>50% · 3인 팀</p>
+          </div>
+          <div class="meta-card">
+            <span>최종 결과물 사이트</span>
+            <p><a href="https://jw123123.github.io/k-car/" target="_blank">jw123123.github.io/k-car</a></p>
+          </div>
+          <div class="meta-card">
+            <span>디자인 시안</span>
+            <p><a href="https://www.figma.com/design/ThsGCsbWiT4yIMXUIIxTW6/%EC%BC%80%EC%9D%B4%EC%B9%B4-%EB%A6%AC%EB%89%B4%EC%96%BC-%EB%94%94%EC%9E%90%EC%9D%B8?node-id=134-7427&t=J1rY0wJ0Mwz7FVUN-1" target="_blank">피그마 URL</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 개요 (PDF 3p 형태: 제목부터 이어지는 V자 레드 그라데이션 배너) -->
+    <section id="overview" class="overview">
+      <div class="overview-chevron">
+        <div class="wrap">
+          <h2 class="sec-title reveal">프로젝트 개요</h2>
+        </div>
+        <p class="chevron-txt reveal d2">직영 인증 시스템을 기반으로 안전하고 투명한<br>중고차 거래 경험을 제공하는 플랫폼</p>
+      </div>
+
+      <div class="wrap">
+        <div class="overview-note reveal d3">
+          <p>
+            K Car의 중고차 거래 자체가 자원 재사용과 순환 소비라는 ESG 가치와 연결되지만,
+            기존 사이트에서는 이 점이 충분히 드러나지 않아 콘텐츠 구조, 시각적 표현, 인터랙션 요소를 개선하여
+            브랜드 경험을 시각적으로 보여주고자 리디자인 프로젝트로 선정하게 되었습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 기존 사이트 분석 -->
+    <section id="analysis">
+      <div class="wrap">
+        <h2 class="sec-title reveal">기존 사이트 분석</h2>
+
+        <div class="analysis-grid">
+          <div class="analysis-card asis reveal">
+            <h3>기존 구조</h3>
+            <ul>
+              <li>기업 정보 중심의 단조로운 레이아웃으로 브랜드 경쟁력이 직관적으로 전달되지 않음</li>
+              <li>텍스트와 정적인 이미지 위주의 콘텐츠 구성으로 사용자 몰입도가 낮음</li>
+              <li>서비스 정보와 CTA가 분산되어 있어 사용자 행동 유도가 부족함</li>
+            </ul>
+          </div>
+          <div class="analysis-arrow reveal d1">→</div>
+          <div class="analysis-card tobe reveal d2">
+            <h3>리뉴얼 방향</h3>
+            <ul>
+              <li>브랜드 아이덴티티를 강조한 비주얼과 핵심 메시지 중심의 메인 화면으로 개선</li>
+              <li>스크롤 인터랙션과 모션 효과를 활용하여 콘텐츠 탐색 경험과 몰입감 향상</li>
+              <li>서비스 특징을 카드형 UI로 재구성하고 명확한 CTA를 배치하여 사용성 및 전환율 개선</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 타겟 -->
+    <section id="target" class="target">
+      <div class="wrap">
+        <h2 class="sec-title reveal">프로젝트 타겟</h2>
+
+        <div class="target-rows">
+          <div class="target-row reveal">
+            <h3>자동차에 관심이<br>많은 성인</h3>
+            <ul>
+              <li>경제성과 신뢰를 우선하는 현실 소비층</li>
+              <li>차량 구매 시 가격뿐 아니라 품질과 정보 투명성을 중시</li>
+              <li>환경까지 고려한 합리적 소비에 공감 가능한 세대</li>
+            </ul>
+          </div>
+          <div class="target-row reveal d1">
+            <h3>핵심 니즈</h3>
+            <ul>
+              <li>신뢰할 수 있는 차량 · 기업 정보 확인</li>
+              <li>합리적이면서 가치 있는 소비라는 확신</li>
+              <li>직관적인 메뉴와 빠른 정보 탐색</li>
+            </ul>
+          </div>
+          <div class="target-row reveal d2">
+            <h3>사용자 시나리오</h3>
+            <ul>
+              <li><strong>SNS · 검색 유입</strong> — 메인 페이지 진입 후 기업 소개 확인</li>
+              <li><strong>정보 탐색</strong> — 서비스, ESG, 채용 정보 확인</li>
+              <li><strong>최종 행동</strong> — K Car를 단순 중고차 플랫폼이 아닌 신뢰 가능한 ESG 소비 플랫폼으로 인식</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 프로젝트 목표 -->
+    <section id="goal" class="goal">
+      <div class="wrap">
+        <h2 class="sec-title reveal">프로젝트 목표</h2>
+        <div class="goal-body">
+          <div class="goal-bubble reveal d1">
+            <p>기업의 경영철학을 직관적으로 전달하고<br>기술역량을 포함한 핵심서비스 소개</p>
+          </div>
+          <figure class="goal-car reveal d2">
+            <img src="images/kcar_pf/car.png" alt="자동차 스케치 일러스트">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 와이어프레임 -->
+    <section id="wireframe">
+      <div class="wrap">
+        <h2 class="sec-title reveal">와이어프레임</h2>
+
+        <!-- 그리드 시스템 -->
+        <h3 class="sub-label reveal">그리드 시스템 및 반응형 기준</h3>
+        <div class="grid-cards">
+          <div class="grid-card reveal">
+            <div class="grid-demo col12"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <h4>PC</h4>
+            <p>width 1920px · 12cols<br>columns 129px · margin 96px</p>
+          </div>
+          <div class="grid-card reveal d1">
+            <div class="grid-demo col8"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <h4>Tablet</h4>
+            <p>width 768px · 8cols<br>columns 83px · margin 15px</p>
+          </div>
+          <div class="grid-card reveal d2">
+            <div class="grid-demo col5"><i></i><i></i><i></i><i></i><i></i></div>
+            <h4>Mobile</h4>
+            <p>width 430px · 5cols<br>columns 70px · margin 16px</p>
+          </div>
+        </div>
+
+        <!-- 데스크톱 와이어프레임 -->
+        <h3 class="sub-label reveal">와이어프레임 | Desktop</h3>
+        <p class="sub-desc reveal">브랜드 소개 → 사업분야 → 지속가능경영 → 채용 / IR로 이어지는 정보 흐름에 대한 와이어프레임 설계</p>
+        <div class="wf-grid">
+          <figure class="reveal"><img src="images/kcar_pf/wf1.png" alt="메인 페이지 와이어프레임"><figcaption>main</figcaption></figure>
+          <figure class="reveal d1"><img src="images/kcar_pf/wf2.png" alt="서브 페이지 와이어프레임"><figcaption>sub page</figcaption></figure>
+          <figure class="reveal d2"><img src="images/kcar_pf/wf3.png" alt="채용 페이지 와이어프레임"><figcaption>career</figcaption></figure>
+        </div>
+
+        <!-- 영상 스토리보드 -->
+        <h3 class="sub-label reveal">영상 스토리보드</h3>
+        <div class="story-steps reveal">
+          <span>1. 깔끔하고 고급스러운 자동차</span>
+          <span>2. 유니폼을 입고 차를 점검하는 사람</span>
+          <span>3. 상담 또는 계약하는 내용의 영상</span>
+          <span>4. 드라이브하는 장면</span>
+          <span>5. 도로 주행 항공 샷</span>
+        </div>
+        <p class="story-note reveal">↓ ESG 방향으로 영상 수정</p>
+        <div class="story-grid">
+          <figure class="reveal"><img src="images/kcar_pf/sb1.jpg" alt="깔끔하고 고급스러운 자동차 스케치"><figcaption>1. 깔끔하고 고급스러운 자동차</figcaption></figure>
+          <figure class="reveal d1"><img src="images/kcar_pf/sb2.jpg" alt="유니폼을 입고 차를 점검하는 사람 스케치"><figcaption>2. 유니폼을 입고 차를 점검하는 사람</figcaption></figure>
+          <figure class="reveal d2"><img src="images/kcar_pf/sb3.jpg" alt="도로 주행 항공 샷 스케치"><figcaption>3. 도로 주행 항공 샷</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 디자인 시스템 -->
+    <section id="system" class="system">
+      <div class="wrap">
+        <h2 class="sec-title reveal">디자인 시스템</h2>
+
+        <div class="system-grid">
+          <div class="sys-card reveal">
+            <h3>Typography — 브랜드의 신뢰성과 기술적 이미지를 동시에 전달</h3>
+            <div class="typo-item">
+              <span class="typo-tag red"><p class="typo-title">Asta Sans</p> : 현대적 / 기술적 / 신뢰감</span>
+              <p class="specimen en">Asta Sans Extra Bold</p>
+            </div>
+            <div class="typo-item">
+              <span class="typo-tag black"><p class="typo-title">Pretendard Variable</p> : 가독성 / 안정성 / 폴백</span>
+              <p class="specimen ko">가나다라마 123</p>
+            </div>
+            <table class="typo-scale">
+              <tr><td>영상 텍스트</td><td>Asta Sans Extra Bold</td><td>96px</td></tr>
+              <tr><td>타이틀</td><td>Asta Sans Extra Bold</td><td>56pt</td></tr>
+              <tr><td>본문</td><td>Asta Sans Medium</td><td>16pt</td></tr>
+            </table>
+          </div>
+
+          <div class="sys-card reveal d1">
+            <h3>Color System</h3>
+            <div class="color-rows">
+              <div class="color-row">
+                <span class="chip chip-red"></span>
+                <div><h4>K Car Red</h4><p>#D82631 · 에너지와 역동성</p></div>
+              </div>
+              <div class="color-row">
+                <span class="chip chip-black"></span>
+                <div><h4>Black</h4><p>#1A1A1A · 시크함</p></div>
+              </div>
+              <div class="color-row">
+                <span class="chip chip-white"></span>
+                <div><h4>White</h4><p>#FFFFFF · 깔끔함</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 최종 결과물 -->
+    <section id="result" class="result">
+      <div class="wrap">
+        <div class="result-head">
+          <div>
+            <h2 class="sec-title reveal">최종 결과물</h2>
+          </div>
+          <div class="result-links reveal d2">
+            <a href="https://jw123123.github.io/k-car/" target="_blank" class="btn fill">최종 사이트 보기</a>
+            <a href="https://github.com/jw123123/k-car" target="_blank" class="btn line">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Desktop -->
+        <div class="result-group reveal">
+          <h3>Desktop</h3>
+          <p>Main page : 브랜드 → 사업분야 → ESG로 이어지는 흐름을 하나의 화면 내에서 경험하도록 구조 설계<br>
+            Sitemap : 전체 메뉴를 한 화면에 보여주어 구조를 직관적으로 인지할 수 있도록 설계</p>
+          <div class="shots col3">
+            <img src="images/kcar_pf/d1.webp" alt="데스크톱 메인 페이지 상단">
+            <img src="images/kcar_pf/d2.webp" alt="데스크톱 메인 페이지 하단">
+            <img src="images/kcar_pf/sm.png" alt="데스크톱 사이트맵">
+          </div>
+        </div>
+
+        <!-- Tablet -->
+        <div class="result-group reveal">
+          <h3>Tablet</h3>
+          <p>Main page : 카드·텍스트 간격을 재조정, 정보 유지, 가독성 강화</p>
+          <div class="shots col3">
+            <img src="images/kcar_pf/t1.webp" alt="태블릿 메인 페이지 1">
+            <img src="images/kcar_pf/t2.webp" alt="태블릿 메인 페이지 2">
+            <img src="images/kcar_pf/t3.jpg" alt="태블릿 메인 페이지 3">
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="result-group reveal">
+          <h3>Mobile</h3>
+          <p>Main page : 텍스트 밀도 축소, 핵심 메시지가 먼저 보이도록 구조 재구성 ·
+            Sitemap : 빠른 접근을 위해 단계형 메뉴 구조로 설계</p>
+          <div class="shots col4">
+            <img src="images/kcar_pf/m1.webp" alt="모바일 메인 페이지 1">
+            <img src="images/kcar_pf/m2.jpg" alt="모바일 메인 페이지 2">
+            <img src="images/kcar_pf/m3.webp" alt="모바일 메인 페이지 3">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 활용 툴 -->
+    <section id="tools" class="tools">
+      <div class="wrap">
+        <h2 class="sec-title reveal">프로젝트 활용 툴</h2>
+
+        <div class="tool-rows">
+          <div class="tool-row reveal">
+            <h3>기획 / 협업</h3>
+            <div class="chips"><span>Notion</span></div>
+          </div>
+          <div class="tool-row reveal d1">
+            <h3>디자인 / 영상</h3>
+            <div class="chips"><span>Figma</span><span>Photoshop</span><span>Illustrator</span><span>Premiere Pro</span></div>
+          </div>
+          <div class="tool-row reveal d2">
+            <h3>퍼블리싱 / 배포</h3>
+            <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub</span></div>
+          </div>
+          <div class="tool-row reveal d3">
+            <h3>AI 활용</h3>
+            <div class="chips"><span>Gemini</span><span>ChatGPT</span><span>Midjourney</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 팀 구성 및 역할 -->
+    <section id="team" class="team">
+      <div class="wrap">
+        <h2 class="sec-title reveal">프로젝트 팀 구성 및 역할</h2>
+        <p class="sec-desc reveal d1">기획, 디자인, 퍼블리싱, 영상 제작을 통합적으로 수행한 협업 프로젝트</p>
+
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <h3>이다은 <span>팀장</span></h3>
+            <ul>
+              <li>메인 페이지 자료 수집 및 구성</li>
+              <li>메인 페이지 디자인</li>
+              <li>메인 페이지 HTML, CSS 반응형 웹 디자인 진행</li>
+              <li>영상 시나리오 작성 · 자료 수집 · 영상 제작</li>
+            </ul>
+          </div>
+          <div class="team-card reveal d1">
+            <h3>김승원</h3>
+            <ul>
+              <li>기획안 · 회의록 작성</li>
+              <li>서브 메뉴 정리</li>
+              <li>코딩 환경 구축 후 소스 배포</li>
+              <li>서브 페이지 HTML, CSS 반응형 웹 디자인 진행</li>
+            </ul>
+          </div>
+          <div class="team-card me reveal d2">
+            <span class="me-badge">MY ROLE</span>
+            <h3>최지원</h3>
+            <ul>
+              <li>GitHub 기반 형상 관리</li>
+              <li>메인, 사이트맵, 서브 공통, 인재채용 페이지 자료 수집 및 디자인</li>
+              <li>서브 페이지 및 사이트맵 HTML, CSS 반응형 웹페이지 개발</li>
+              <li>페이지 전체 이슈 관리 및 코드 정리</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 마무리 -->
+    <section id="thanks" class="thanks">
+      <h2 class="blind">마무리</h2>
+      <div class="wrap">
+        <p class="thanks-sub reveal">마지막까지 봐주셔서</p>
+        <p class="thanks-title reveal d1">감사합니다!</p>
+        <a href="index.html" class="btn white reveal d2">메인 포트폴리오로 돌아가기</a>
+        <p class="copyright">&copy; 2026. JIWON CHOI. ALL RIGHTS RESERVED.</p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>

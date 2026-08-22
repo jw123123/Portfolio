@@ -12,16 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// 프로젝트 영역 GSAP
-gsap.registerPlugin(ScrollTrigger);
+  // 프로젝트 영역 GSAP
+  gsap.registerPlugin(ScrollTrigger);
+  let mm = gsap.matchMedia();
 
-ScrollTrigger.create({
-  trigger: '.project-container',
-  pin: '.project-bg-title',
-  start: 'top center',
-  end: 'bottom bottom',
-  scrub: 1,
-  pinSpacing: false,
+  mm.add("(min-width: 769px)", () => {
+  ScrollTrigger.create({
+    trigger: '.project-container',
+    pin: '.project-bg-title',
+    start: 'top center',
+    end: 'bottom bottom',
+    scrub: 1,
+    pinSpacing: false,
+  });
 });
 
 

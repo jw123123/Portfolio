@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캐논코리아 리뉴얼 | Portfolio</title>
+  <meta name="description" content="캐논코리아 웹사이트 리뉴얼 프로젝트 포트폴리오 - UI/UX Design">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="canon.css">
+  <script src="canon.js" defer></script>
+</head>
+
+<body>
+
+  <!-- 헤더 -->
+  <header id="hd">
+    <div class="hd-inner wrap">
+      <a href="#top" class="hd-logo">Canon</a>
+      <nav class="hd-nav">
+        <a href="#overview">OVERVIEW</a>
+        <a href="#analysis">ANALYSIS</a>
+        <a href="#persona">PERSONA</a>
+        <a href="#goal">GOAL</a>
+        <a href="#system">SYSTEM</a>
+        <a href="#strategy">STRATEGY</a>
+        <a href="#result">RESULT</a>
+        <a href="#tools">TOOLS</a>
+      </nav>
+      <a href="index.html" class="hd-back">← 메인으로</a>
+    </div>
+  </header>
+
+  <!-- 도트 페이지네이션 -->
+  <nav class="dot-nav" aria-label="섹션 바로가기">
+    <a href="#top" class="active"><span class="label">메인</span><span class="dot"></span></a>
+    <a href="#overview"><span class="label">개요</span><span class="dot"></span></a>
+    <a href="#analysis"><span class="label">사이트 분석</span><span class="dot"></span></a>
+    <a href="#persona"><span class="label">타겟 페르소나</span><span class="dot"></span></a>
+    <a href="#goal"><span class="label">프로젝트 목표</span><span class="dot"></span></a>
+    <a href="#system"><span class="label">디자인 시스템</span><span class="dot"></span></a>
+    <a href="#strategy"><span class="label">개선 전략</span><span class="dot"></span></a>
+    <a href="#result" data-light><span class="label">최종 결과물</span><span class="dot"></span></a>
+    <a href="#tools"><span class="label">활용 툴</span><span class="dot"></span></a>
+    <a href="#thanks"><span class="label">마무리</span><span class="dot"></span></a>
+  </nav>
+
+  <main id="top">
+
+    <!-- 히어로 -->
+    <section class="hero">
+      <h2 class="blind">메인영역</h2>
+      <div class="wrap">
+        <div class="hero-top reveal">
+          <span>PORTFOLIO · 2026</span>
+        </div>
+
+        <div class="hero-body">
+          <div>
+            <h1 class="hero-title reveal d1" data-text="Canon">Canon</h1>
+            <p class="hero-desc reveal d2">
+              국내 카메라 시장 점유율 1위 브랜드 Canon의 디지털 경험을<br>
+              재설계하는 리뉴얼 프로젝트
+            </p>
+            <dl class="hero-meta reveal d3">
+              <div>
+                <dt>Duration</dt>
+                <dd>04.13 – 04.29</dd>
+              </div>
+              <div>
+                <dt>기여도</dt>
+                <dd>100%</dd>
+              </div>
+              <div>
+                <dt>최종 결과물</dt>
+                <dd><a href="https://jw123123.github.io/canon/" target="_blank">jw123123.github.io/canon</a></dd>
+              </div>
+              <div>
+                <dt>디자인 시안</dt>
+                <dd><a
+                    href="https://www.figma.com/design/SxV3dMzwluh3ZzshddBhZI/%EC%BA%90%EB%85%BC?node-id=110-125&t=aiMLfwm5Lirqni8P-1"
+                    target="_blank">피그마 URL</a></dd>
+              </div>
+            </dl>
+          </div>
+          <div class="hero-phones reveal d2">
+            <img src="images/canon_pf/canon_phone1.png" alt="캐논 리뉴얼 모바일 화면 목업" class="phone1">
+            <img src="images/canon_pf/canon_phone2.png" alt="캐논 리뉴얼 모바일 화면 목업" class="phone2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 개요 -->
+    <section id="overview" class="overview">
+      <div class="wrap">
+        <span class="caption reveal">01 &nbsp;Overview</span>
+        <h2 class="overview-title reveal d1">“사진을 시작하고 싶게 만드는 캐논”</h2>
+        <p class="overview-desc reveal d2">
+          캐논은 사진을 시작하는 사용자가 가장 먼저 검색하는 브랜드로,
+          정밀한 이미징 기술과 혁신적인 광학 기술을 바탕으로 사진과 영상의 새로운 가능성을 제시하고 있습니다.
+        </p>
+
+        <div class="overview-card reveal d3">
+          <div class="check-item">
+            <span class="check">✓</span>
+            <div>
+              <h3>정보 중심 구조로 인해 브랜드 경험과 제품 탐색 흐름이 분산</h3>
+              <p>콘텐츠와 제품 정보가 단순 나열형으로 구성되어 사용자의 몰입감과 탐색 효율 떨어짐</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <span class="check">✓</span>
+            <div>
+              <h3>캐논만의 브랜드를 사용자가 자연스럽게 경험할 수 있는 UX로 재구성</h3>
+              <p>제품 탐색, 브랜드 콘텐츠, 인터랙션 경험을 연결하여 캐논 브랜드 경험을 강화하고자 함</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 기존 사이트 분석 -->
+    <section id="analysis">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="caption reveal">02 &nbsp;Site Analysis</span>
+            <h2 class="sec-title reveal d1">기존 사이트 <em>분석</em></h2>
+          </div>
+          <p class="sec-side reveal d2">
+            사용자 시나리오를 따라가며 도출한 강점, 개선할 점.<br>
+            개선할 부분은 리뉴얼 개선 방향으로 이어집니다.
+          </p>
+        </div>
+
+        <div class="analysis-list">
+          <div class="analysis-row reveal">
+            <div class="analysis-problem">복잡한 정보 구조로 인한 탐색 피로도</div>
+            <div class="analysis-arrow">⟶</div>
+            <div class="analysis-solution">
+              <div>제품 중심 탐색 UX 개선</div>
+            </div>
+          </div>
+          <div class="analysis-row reveal d1">
+            <div class="analysis-problem">제품 탐색 흐름 부족</div>
+            <div class="analysis-arrow">⟶</div>
+            <div class="analysis-solution stack">
+              <div>인터랙션 기반 몰입형 UI 적용</div>
+              <div>직관적인 정보 흐름과 콘텐츠 구조 재정비</div>
+            </div>
+          </div>
+          <div class="analysis-row reveal d2">
+            <div class="analysis-problem">정보 전달 중심의 구성</div>
+            <div class="analysis-arrow">⟶</div>
+            <div class="analysis-solution">
+              <div>브랜드 경험 중심의 메인 구조 재설계</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 타겟 페르소나 -->
+    <section id="persona">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="caption reveal">03 &nbsp;Persona &amp; Needs</span>
+            <h2 class="sec-title reveal d1"><em>타겟</em> 페르소나</h2>
+          </div>
+          <p class="sec-side reveal d2">
+            단순 제품 구매가 아닌, 사진과 영상이라는 취미와 콘텐츠 제작을 시작하며
+            카메라 선택 과정에서 브랜드 신뢰와 직관적인 탐색 경험을 중요하게 여기는
+            사용자를 중심으로 리뉴얼을 진행하였습니다.
+          </p>
+        </div>
+
+        <div class="persona-badge reveal">
+          <div class="persona-photo"><img src="images/canon_pf/persona.jpg" alt="타겟 페르소나 일러스트"></div>
+          <span class="persona-ribbon">사진과 영상을 기록하는 2-30대<br>크리에이터 사용자</span>
+        </div>
+
+        <div class="persona-card reveal d1">
+          <div class="persona-grid">
+            <div class="persona-item">
+              <span class="p-label">Point</span>
+              <h3>특징</h3>
+              <p>깔끔한 디자인, 빠른 정보 탐색 중시</p>
+            </div>
+            <div class="persona-item">
+              <span class="p-label">Purpose</span>
+              <h3>목적</h3>
+              <p>제품 정보 획득, 브랜드 신뢰 확보</p>
+            </div>
+            <div class="persona-item">
+              <span class="p-label">Behavior</span>
+              <h3>시나리오</h3>
+              <p>SNS → 페이지 방문 → 제품 비교 및 정보 탐색 → 구매</p>
+            </div>
+            <div class="persona-item">
+              <span class="p-label">Goal</span>
+              <h3>목표</h3>
+              <p>목적에 맞는 제품 탐색 후 구매</p>
+            </div>
+          </div>
+
+          <div class="persona-needs">
+            <span class="p-label">Core Needs</span>
+            <h3>사용자 니즈</h3>
+            <ol>
+              <li><span>01</span>카메라 제품 비교 가이드와 추천</li>
+              <li><span>02</span>누구나 쉽게 이해할 수 있는 직관적인 제품 탐색 구조</li>
+              <li><span>03</span>제품 탐색 → 서비스 접근으로 자연스럽게 이어지는 구조</li>
+              <li><span>04</span>환경을 구애받지 않는 구매 흐름</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 프로젝트 목표 (뷰파인더) -->
+    <section id="goal" class="goal">
+      <div class="wrap">
+        <span class="caption reveal">04 &nbsp;Project Goal</span>
+        <div class="viewfinder reveal d1">
+          <span class="vf-corner tl"></span>
+          <span class="vf-corner tr"></span>
+          <span class="vf-corner bl"></span>
+          <span class="vf-corner br"></span>
+          <span class="vf-time">00.00.20.05</span>
+          <span class="vf-rec"><i></i>REC</span>
+          <p class="goal-txt">
+            "정보를 보여주는 사이트"에서<br>
+            "<em>사진을 시작하고 싶게 만드는 사이트</em>"로
+          </p>
+          <span class="vf-fps">1920X1080 25 FPS</span>
+          <span class="vf-menu">MENU ☰</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 디자인 시스템 -->
+    <section id="system">
+      <div class="wrap">
+        <span class="caption reveal">05 &nbsp;Design System</span>
+        <h2 class="sec-title reveal d1">디자인 <em>시스템</em></h2>
+
+        <div class="system-grid">
+          <div class="sys-card reveal">
+            <h3>— Color Tokens</h3>
+            <div class="swatches">
+              <div class="swatch">
+                <div class="chip chip-bg"></div>
+                <p>#1A1311</p>
+              </div>
+              <div class="swatch">
+                <div class="chip chip-red"></div>
+                <p>#DC000C</p>
+              </div>
+              <div class="swatch">
+                <div class="chip chip-dgray"></div>
+                <p>#3A3A3A</p>
+              </div>
+              <div class="swatch">
+                <div class="chip chip-gray"></div>
+                <p>#7A7A7A</p>
+              </div>
+              <div class="swatch">
+                <div class="chip chip-lgray"></div>
+                <p>#BABABA</p>
+              </div>
+              <div class="swatch">
+                <div class="chip chip-white"></div>
+                <p>#FFFFFF</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sys-card reveal d1">
+            <h3>— Typography</h3>
+            <div class="typo-block">
+              <span class="typo-label">국문 폰트 · Pretendard Variable</span>
+              <p class="sp-ko-18">Pretendard Variable / 18</p>
+              <p class="sp-ko-24">Pretendard Variable / 24</p>
+              <p class="sp-ko-32">Pretendard Variable / 32</p>
+            </div>
+            <div class="typo-block">
+              <span class="typo-label">영문 폰트 · Roboto</span>
+              <p class="sp-en-24">Roboto / 24</p>
+              <p class="sp-en-44">Roboto / 44</p>
+              <p class="sp-en-56">Roboto / 56</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 개선 전략 -->
+    <section id="strategy" class="strategy">
+      <div class="wrap">
+        <span class="caption reveal">06 &nbsp;UI &amp; UX Strategy</span>
+        <h2 class="sec-title reveal d1">UI/UX <em>개선</em></h2>
+
+        <div class="strat-list">
+          <div class="strat-row reveal">
+            <figure><img src="images/canon_pf/strat.webp" alt="비주얼 영역과 신제품 영역 화면"></figure>
+            <div class="strat-txt-right txt">
+              <div class="strat-point">
+                <h3>비주얼 영역</h3>
+                <p>비주얼 영상과 브랜드 문구를 활용해 제품 경험을 동시에 전달하고,
+                  사용자가 첫 화면에서 Canon의 브랜드 감성을 직관적으로 경험 가능하게 개선했습니다.</p>
+              </div>
+              <div class="strat-point">
+                <h3>신제품 영역</h3>
+                <p>대형 결과물 이미지를 활용한 감성 중심 구성으로 단순 스펙이 아닌
+                  “촬영 경험” 중심 탐색을 제공해 사용자가 제품 결과물을 먼저 경험 가능하게 개선했습니다.</p>
+              </div>
+              <div class="strat-point">
+                <h3>추천 영역</h3>
+                <p>제품 이미지, 가격, 핵심 특징을 시각적으로 구분하여 제품 비교가
+                  한 화면에서 가능하도록 개선했습니다.</p>
+              </div>
+              <div class="strat-point">
+                <h3>Canon is Now</h3>
+                <p>Hover 시 카드 너비가 확장되는 인터랙션을 적용해 콘텐츠 몰입감을 향상시켰습니다.</p>
+              </div>
+            </div>
+            <div class="strat-txt-left txt">
+              <div class="strat-point">
+                <h3>커뮤니티 영역</h3>
+                <p>카드 크기와 컬러를 활용한 시각적 위계를 강화했습니다.</p>
+              </div>
+              <div class="strat-point">
+                <h3>서비스 영역</h3>
+                <p>아이콘 기반 카드형 UI를 적용해 주요 기능 접근 동선을 단순하게 개선했습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 최종 결과물 -->
+    <section id="result" class="result">
+      <a href="https://jw123123.github.io/canon/" target="_blank" class="result-collage reveal">
+        <img src="images/canon_pf/final.png" alt="캐논 리뉴얼 최종 결과물 모바일 화면 콜라주">
+      </a>
+      <p class="result-hint">이미지 클릭 시 실제 사이트로 이동합니다</p>
+      <div class="result-links reveal d2">
+        <a href="https://jw123123.github.io/canon/" target="_blank" class="btn fill">최종 사이트 보기</a>
+        <a href="https://github.com/jw123123/canon" target="_blank" class="btn line">GitHub</a>
+      </div>
+    </section>
+
+    <!-- 08 활용 툴 -->
+    <section id="tools" class="tools">
+      <div class="wrap">
+        <span class="caption reveal">08 &nbsp;Used Tools</span>
+        <h2 class="sec-title reveal d1">프로젝트 활용 <em>툴</em></h2>
+
+        <div class="tools-grid">
+          <div class="tool-card reveal">
+            <h3>HTML</h3>
+            <p>마크업 구조 설계</p>
+          </div>
+          <div class="tool-card reveal">
+            <h3>CSS</h3>
+            <p>스타일링 · 레이아웃</p>
+          </div>
+          <div class="tool-card reveal d1">
+            <h3>JavaScript</h3>
+            <p>동적 인터랙션 구현</p>
+          </div>
+          <div class="tool-card reveal d1">
+            <h3>Figma</h3>
+            <p>UI 디자인 · 프로토타이핑</p>
+          </div>
+          <div class="tool-card reveal d2">
+            <h3>Git</h3>
+            <p>코드 버전 관리 · 협업</p>
+          </div>
+          <div class="tool-card reveal">
+            <h3>Premiere Pro</h3>
+            <p>히어로 영상 편집</p>
+          </div>
+          <div class="tool-card reveal">
+            <h3>Photoshop</h3>
+            <p>이미지 보정 · 합성</p>
+          </div>
+          <div class="tool-card reveal d1">
+            <h3>Chat GPT</h3>
+            <p>AI협업 · 이미지생성</p>
+          </div>
+          <div class="tool-card reveal d1">
+            <h3>Gemini</h3>
+            <p>AI협업 · 이미지생성</p>
+          </div>
+          <div class="tool-card reveal d2">
+            <h3>Claude</h3>
+            <p>AI협업 · 리서치 보조</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 마무리 -->
+    <section id="thanks" class="thanks">
+      <h2 class="blind">마무리</h2>
+      <div class="wrap">
+        <p class="thanks-title reveal">THANK YOU</p>
+        <p class="thanks-sub reveal d1">마지막까지 봐주셔서 감사합니다!</p>
+        <a href="index.html" class="btn fill reveal d2">메인 포트폴리오로 돌아가기</a>
+        <p class="copyright">&copy; 2026. JIWON CHOI. ALL RIGHTS RESERVED.</p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>

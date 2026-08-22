@@ -116,7 +116,7 @@ button {
 /* 히어로 영역 */
 .hero-section {
   position: relative;
-  min-height: 70vh;
+  min-height: 60vh;
   display: flex; 
   align-items:center;
 }
@@ -124,7 +124,7 @@ button {
 .hero-section:before {
   content: '';
   position: absolute;
-  top: 0px; 
+  top: -100px; 
   left: -150px;
   width: 500px; 
   height: 500px;
@@ -164,23 +164,23 @@ button {
 .project-container {
   position: relative; 
   z-index:1;
-  display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
-  .project-item,
-  .project-item:nth-child(1),
-  .project-item:nth-child(2),
-  .project-item:nth-child(3),
-  .project-item:nth-child(4) {
-    margin-top: 0;
-  }
-
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; 
+}
+.col-right {
+  margin-top: 38%;
+}
 
 .project-img {
   display: block; 
   width:100%;
+  aspect-ratio: 3 / 2.2;
   object-fit: cover;
 }
 
@@ -193,12 +193,18 @@ button {
   color: #fff;
 }
 
-
 .item-title {
   display: block;
   font-size: 20px; 
   font-weight:700;
   font-family: var(--title-font);
+}
+
+.item-desc{
+  display: none;
+  margin-top: 5px;
+  font-size: 0.9em;
+  width: 95%;
 }
 
 
@@ -364,7 +370,7 @@ button {
 .figma:after{width: 80%;}
 .ps:after{width: 80%;}
 .ai:after{width: 60%;}
-.claude:after{width: 60%;}
+.claude:after{width: 70%;}
 .gpt:after{width: 60%;}
 .gemini:after{width: 60%;}
 
@@ -456,24 +462,13 @@ button {
   font-weight: 700;
 }
 
+.profile-desc {display: none;}
 .profile-desc p {
   font-size: 14px; 
   font-weight: 300;
   line-height: 1.4;
   color: #fff;
   opacity: 0.8;
-}
-
-/* 서명 */
-.ft-sign {
-  position: absolute;
-  left: 5%;
-  bottom: 15%;
-  width: 40%;
-}
-.ft-sign img {
-  width: 60%;
-  opacity: 0.3;
 }
 
 /* 정보 */
