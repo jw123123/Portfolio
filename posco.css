@@ -519,9 +519,10 @@ section { padding: 140px 0; position: relative; }
   .wf-grid { grid-template-columns: 1fr; }
   .concept-cards { grid-template-columns: 1fr; max-width: 460px; margin-left: auto; margin-right: auto; }
   .swatches { grid-template-columns: repeat(2, 1fr); }
-  .typo-grid { grid-template-columns: 1fr; }
   .strat-list { gap: 70px; }
-  .strat-row { grid-template-columns: 1fr; gap: 26px; }
+  .strat-row { grid-template-columns: 1.15fr .85fr; gap: 30px;}
+  .strat-txt {gap: 2em;}
+  .strat-txt .sol {font-size: 13px;}
   .strat-row.rev figure { order: 0; }
   .strat-row.rev .strat-txt { order: 0; }
   .result-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
@@ -544,6 +545,9 @@ section { padding: 140px 0; position: relative; }
   .needs ul { grid-template-columns: 1fr; }
   .swatches { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .typo-card { padding: 28px 26px; }
+  .typo-grid { grid-template-columns: 1fr; }
+  .strat-row { grid-template-columns: 1fr; gap: 26px; }
+  .strat-mo-image {display: none;}
   .result-grid { grid-template-columns: 1fr; }
   .tools-grid { grid-template-columns: repeat(2, 1fr); }
   .concept-summary { padding: 44px 26px; }
