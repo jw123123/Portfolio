@@ -126,7 +126,7 @@ section { padding: 100px 0; position: relative; }
 .meta-card a { border-bottom: 1px solid var(--red); padding-bottom: 1px; transition: color .25s; }
 .meta-card a:hover { color: var(--red); }
 
-/* ===== 01 개요 (PDF 3p: 제목부터 이어지는 V자 레드 그라데이션 배너) ===== */
+/* ===== 01 개요 ===== */
 .overview { background: #fff; padding-top: 0; }
 .overview-chevron {
   padding: 80px 24px 120px;
@@ -140,7 +140,8 @@ section { padding: 100px 0; position: relative; }
 .overview-chevron .sec-title { color: #fff; margin-bottom: 100px; }
 .chevron-txt {
   text-align: center;
-  font-size: clamp(26px, 3.4vw, 38px); font-weight: 800;
+  font-size: clamp(26px, 3.4vw, 38px); 
+  font-weight: 800;
   color: #fff; line-height: 1.55; word-break: keep-all;
 }
 .overview-note {
@@ -171,8 +172,11 @@ section { padding: 100px 0; position: relative; }
 }
 .analysis-arrow {
   display: flex; align-items: center; justify-content: center;
-  font-size: 34px; font-weight: 800; color: var(--red);
+  font-size: 56px; font-weight: 900; color: var(--red);
 }
+
+.analysis-arrow:before {content: '\e5c8'; font-family: var(--google-icon);}
+
 
 /* ===== 03 타겟 ===== */
 .target { background: var(--bg-light); }
@@ -326,8 +330,8 @@ section { padding: 100px 0; position: relative; }
 }
 .btn.fill { background: var(--red); color: #fff; }
 .btn.fill:hover { background: var(--red-deep); }
-.btn.line { border: 1.5px solid var(--red); color: var(--red); }
-.btn.line:hover { background: var(--red); color: #fff; }
+.btn.result-line { border: 1.5px solid var(--red); color: var(--red); }
+.btn.result-line:hover { background: var(--red); color: #fff; }
 .btn.white { background: #fff; color: var(--red); }
 .btn.white:hover { background: var(--black); color: #fff; }
 
@@ -453,15 +457,15 @@ section { padding: 100px 0; position: relative; }
 .dot-nav.dark a.active .dot { background: #fff; border-color: #fff; }
 
 /* ===== 반응형 ===== */
-@media (max-width: 1024px) {
+@media (max-width: 1281px) {
   .dot-nav { display: none; }
-  section { padding: 100px 0; }
   .hd-nav { display: none; }
   .hero { min-height: auto; padding: 150px 0 100px; }
   .hero-top { margin-bottom: 60px; }
   .hero-meta { grid-template-columns: 1fr 1fr; }
-  .analysis-grid { grid-template-columns: 1fr; gap: 0; }
-  .analysis-arrow { transform: rotate(90deg); padding: 14px 0; }
+  .analysis-arrow { padding: 14px 0; }
+  .analysis-card {padding: 24px 20px;}
+  .analysis-card li {font-size: 18px;}
   .target-row { grid-template-columns: 1fr; gap: 14px; padding: 34px 0; }
   .target-row h3 { text-align: left; }
   .goal-bubble { margin-left: 0; }
@@ -476,8 +480,9 @@ section { padding: 100px 0; position: relative; }
   .team-grid { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 769px) {
   body { font-size: 16px; }
+  section { padding: 80px 0; }
   .hd-inner { height: 60px; }
   .hd-logo { font-size: 20px; }
   .hd-back { font-size: 12px; padding: 7px 16px; }
@@ -485,8 +490,15 @@ section { padding: 100px 0; position: relative; }
   .hero-meta { grid-template-columns: 1fr; }
   .overview-chevron { padding: 70px 20px 120px; }
   .overview-note { padding: 24px 26px; }
+  .chevron-txt{font-size: 20px;}
+  .analysis-grid { grid-template-columns: 1fr; gap: 0; }
   .analysis-card { padding: 32px 26px; }
+  .analysis-card li {font-size: 16px;}
+  .analysis-arrow {font-size: 40px;}
+  .analysis-arrow:before {content: '\e5db';}
   .grid-cards { grid-template-columns: 1fr; }
+  .goal-bubble {padding: 10px 24px;}
+  .goal-bubble p {font-size: 20px;}
   .wf-grid { grid-template-columns: 1fr; }
   .wf-grid figure:last-child { grid-column: auto; }
   .story-steps span { min-width: 100%; }

@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0');
+
 
 :root {
   --bg: #F7F5EF;
@@ -10,6 +12,7 @@
   --terra: #B56A5D;
   --cream: #F7F5EF;
   --line: rgba(47, 79, 62, .18);
+  --google-icon: 'Material Symbols Outlined'
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -170,6 +173,9 @@ section { padding: 140px 0; position: relative; }
   color: var(--ink); font-size: 17px; word-break: keep-all;
 }
 .analysis-arrow { display: flex; align-items: center; justify-content: center; color: var(--terra); font-size: 26px; }
+.analysis-arrow:before{content: '\e5c8'; font-size: 32px; font-weight: 600;
+  font-family: var(--google-icon);
+}
 .analysis-solution {
   align-items: center; padding: 20px 32px;
   background: var(--main);
@@ -401,17 +407,17 @@ section { padding: 140px 0; position: relative; }
 .dot-nav.dark a.active .dot { background: var(--gold); border-color: var(--gold); }
 
 /* ===== 반응형 ===== */
-@media (max-width: 1024px) {
+@media (max-width: 1281px) {
   .dot-nav { display: none; }
   section { padding: 100px 0; }
   .hero { padding: 150px 0 90px; }
-  .hero-inner { grid-template-columns: 1fr; gap: 70px; }
-  .hero-desc { max-width: 100%; }
+  .hero-inner { grid-template-columns: 0.9fr 1.1fr; gap: 40px; }
+  .hero-desc { max-width: 100%; font-size: 15px;}
+  .collage {display: grid;}
   .collage .col:nth-child(1) { margin-top: 40px; }
   .collage .col:nth-child(3) { margin-top: 60px; }
   .hd-nav { display: none; }
-  .analysis-row { grid-template-columns: 1fr; gap: 0; }
-  .analysis-arrow { transform: rotate(90deg); padding: 6px 0; }
+  .analysis-row { gap: 0; }
   .target-cards { grid-template-columns: 1fr; }
   .concept-circles { gap: 20px; }
   .swatches { grid-template-columns: repeat(3, 1fr); }
@@ -422,13 +428,18 @@ section { padding: 140px 0; position: relative; }
   .browser:hover .screen img { transform: translateY(calc(-100% + 520px)); }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 769px) {
   body { font-size: 16px; }
   .hd-inner { height: 60px; }
   .hd-logo { font-size: 19px; }
   .hd-back { font-size: 12px; padding: 7px 16px; }
   .hero { padding: 130px 0 80px; }
-  .hero-meta { gap: 26px; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-meta { gap: 26px; display: grid; grid-template-columns: repeat(2, 1fr);}
+  .collage {display: none;}
+  .analysis-list{gap: 80px;}
+  .analysis-row { grid-template-columns: 1fr; }
+  .analysis-arrow:before{content: '\e5db';}
   .concept-circles { grid-template-columns: 1fr; max-width: 300px; }
   .swatches { grid-template-columns: repeat(2, 1fr); }
   .strategy-grid { grid-template-columns: 1fr; }
