@@ -420,9 +420,6 @@ section { padding: 140px 0; position: relative; }
 }
 .result-grid a {
   display: block;
-  /*  border-radius: 14px; overflow: hidden;
-  border: 1px solid var(--line);
-  box-shadow: 0 20px 44px rgba(11, 31, 58, .1); */
   transition: transform .35s, box-shadow .35s;
 }
 .result-grid a:hover {
@@ -508,7 +505,7 @@ section { padding: 140px 0; position: relative; }
 .dot-nav.dark a.active .dot { background: var(--lblue); border-color: var(--lblue); }
 
 /* ===== 반응형 ===== */
-@media (max-width: 1024px) {
+@media (max-width: 1281px) {
   .dot-nav { display: none; }
   section { padding: 100px 0; }
   .hd-nav { display: none; }
@@ -516,9 +513,6 @@ section { padding: 140px 0; position: relative; }
   .hero-top { margin-bottom: 60px; }
   .hero-title { margin-bottom: 60px; }
   .hero-meta { gap: 30px; }
-  .asis-head { grid-template-columns: 1fr; gap: 0; }
-  .asis-head h3:last-child { display: none; }
-  .asis-row { grid-template-columns: 1fr; gap: 14px; }
   .target-layout { grid-template-columns: 1fr; gap: 50px; }
   .target-photo { width: 200px; margin: 0 auto; }
   .goal-cards { grid-template-columns: 1fr; }
@@ -534,7 +528,7 @@ section { padding: 140px 0; position: relative; }
   .tools-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 769px) {
   body { font-size: 16px; }
   .hd-inner { height: 60px; }
   .hd-logo { font-size: 16px; }
@@ -542,6 +536,9 @@ section { padding: 140px 0; position: relative; }
   .hero { padding: 130px 0 90px; }
   .hero-meta { gap: 22px; }
   .overview { padding: 130px 0; }
+  .asis-head { grid-template-columns: 1fr; gap: 0; }
+  .asis-head h3:last-child { display: none; }
+  .asis-row { grid-template-columns: 1fr; gap: 14px; }
   .target-grid { grid-template-columns: 1fr; gap: 30px; }
   .needs { padding: 30px 26px; }
   .needs ul { grid-template-columns: 1fr; }

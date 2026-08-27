@@ -455,8 +455,6 @@ section { padding: 140px 0; position: relative; }
   .hero-phones { max-width: 420px; margin: 0 auto; }
   .hero-meta { gap: 30px; }
   .overview-card { padding: 44px 40px; }
-  .analysis-row { grid-template-columns: 1fr; gap: 12px; }
-  .analysis-arrow { transform: rotate(90deg); font-size: 22px; }
   .persona-card { grid-template-columns: 1fr; gap: 50px; padding: 90px 40px 44px; }
   .system-grid { grid-template-columns: 1fr; }
   .strat-list { gap: 80px; }
@@ -478,9 +476,11 @@ section { padding: 140px 0; position: relative; }
   .hero-phones{display: none;}
   .overview { padding: 130px 0; }
   .overview-card { padding: 36px 28px; gap: 30px; }
-  .persona-badge { flex-direction: column; align-items: flex-start; gap: 0; margin-bottom: 15px; }
+  .analysis-row { grid-template-columns: 1fr; gap: 12px; }
+  .analysis-arrow { transform: rotate(90deg); font-size: 22px; }
+  .persona-badge { flex-direction: column; align-items: flex-start; gap: 0; margin-bottom: -20px; }
   .persona-photo { width: 110px; height: 110px; }
-  .persona-ribbon { margin-left: 30px; margin-top: 1.2em; border-radius: 12px; font-size: 15px; padding: 14px 22px 14px 40px; }
+  .persona-ribbon { margin-left: 20px; margin-top: 30px; border-radius: 12px; font-size: 15px; padding: 14px 22px 14px 40px; }
   .persona-card { padding: 30px 26px; }
   .persona-grid { grid-template-columns: 1fr; gap: 30px; }
   .strat-row{position: relative;}
